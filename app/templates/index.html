@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>Carl Brown - Free HTML Template For Personal Portfolio CV </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- script
+	================================================== -->
+    <script src="{% static 'js/modernizr.js' %}"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navigation-bar" tabindex="0">
+
+
+    <div class=" offcanvas-btn text-end m-3">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><iconify-icon icon="ci:hamburger-lg"
+                style="font-size: 30px;"></iconify-icon></button>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <header class="hero position-fixed">
+                <div class="container hero-container text-center align-content-between">
+
+                    <div>
+                        <img src="{% static 'images/carlbrown.png' %}" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes"
+                            width="140" height="140" loading="lazy">
+
+
+                        <h2 class="fw-bold">{{pdtl.name}}</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam risus nam ma aliquet.
+                            Libero
+                            porta in sodales.</p>
+                        <div class="social-icon my-2">
+                            <p>
+                                <a class="social-link mx-3 active" href="#"> <iconify-icon
+                                        icon="icomoon-free:facebook"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:instagram"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:twitter"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:youtube"></iconify-icon> </a>
+                            </p>
+
+                        </div>
+
+                        <h4 class=" text-uppercase text-light fs-5 fw-bold py-2 mx-5 mt-4 ">Pro Pages</h4>
+
+                        <ul class="text-center list-unstyled">
+                            <li><a href="blog-single.html" class="text-uppercase ">Blog-Single
+                                    <span class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="services-single.html" class="text-uppercase ">Service-Single
+                                    <span class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="portfolio-single.html" class="text-uppercase ">Portfolio-Single
+                                    <span class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="contact.html" class="text-uppercase ">Contact <span
+                                        class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="team.html" class="text-uppercase ">My Team <span
+                                        class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="review.html" class="text-uppercase ">Reviews <span
+                                        class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="faq.html" class="text-uppercase ">FAQs <span
+                                        class="badge bg-secondary">Pro</span></a></li>
+                        </ul>
+
+                        <div>
+                            <a href="https://templatesjungle.gumroad.com/l/carl-free-bootstrap-5-html-website-template-for-portfolio"
+                                class="btn btn-primary get-pro text-uppercase rounded-5 py-3 px-4 mt-2">Get
+                                Pro <iconify-icon icon="mdi:cart" class="ps-2" style="color: white;"></iconify-icon>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-5">
+                        <p class="copyright ">© Free HTML template by: <a href="https://templatesjungle.com/">
+                                <u>TemplatesJungle </u> </a> </p>
+                    </div>
+
+
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <section id="navigation-bar" class="navigation position-fixed ">
+
+
+                <ul class="nav nav-pills text-center align-items-center mt-5 ms-xl-5 ms-3 ">
+                    <li>
+                        <a href="#home" class="nav-link active rounded-0" aria-current="page" data-bs-toggle="tooltip"
+                            data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+                            <iconify-icon icon="ic:round-home"></iconify-icon>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Dashboard" data-bs-original-title="Dashboard">
+                            <iconify-icon icon="ic:round-person"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Orders" data-bs-original-title="Orders">
+                            <iconify-icon icon="ic:round-school"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experiance" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Orders" data-bs-original-title="Orders">
+                            <iconify-icon icon="solar:programming-bold"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Dashboard" data-bs-original-title="Dashboard">
+                            <iconify-icon icon="el:idea-alt"></iconify-icon>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav-link rounded-0" data-bs-toggle="tooltip"
+                            data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+                            <iconify-icon icon="ic:round-business-center"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#certificates" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Customers" data-bs-original-title="Customers">
+                            <iconify-icon icon="ph:certificate-fill"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Customers" data-bs-original-title="Customers">
+                            <iconify-icon icon="ic:round-phone"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <div class="col-xl-6 offset-xl-2">
+                <div class="container content-container">
+
+                    <section id="home" class="mt-0">
+
+                        <div class=" py-lg-4 my-lg-4 text-center">
+                            <h1 class="fw-bold">Hi I’m {{pdtl.name}}</h1>
+                            <div class="col-lg-10 mx-auto">
+                                <p class="lead-paragraph mb-4">I'm a Software Developer</p>
+                                <div class=" gap-2 d-sm-flex justify-content-sm-center">
+                                    <a href = "https://drive.google.com/file/d/1374j9B0w9LFJHFyeLYUnFHTNxz5cDXmO/view?usp=sharing"><button type="button" class="btn btn-primary btn-lg mt-3">HIRE ME</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="about" class="mt-0">
+
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">About Me</h1>
+                            <p class="lead-paragraph my-4">{% for ab in about %}{{ab.about}}{% endfor %}</p>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class=" py-4 my-4 ">
+                            <h2 class="fw-bold">Personal Info</h2>
+
+                            <ul class="list-unstyled">
+                                <li><b>Age:</b> {{pdtl.age}} </li>
+                                <li><b>Residence:</b> {{pdtl.residence}} </li>
+                                <li><b>Address:</b> {{pdtl.address}}</li>
+                                <li><b>E-mail:</b> mail: {{pdtl.email}}</li>
+                                <li><b>Phone:</b> {{pdtl.phone}}</li>
+                            </ul>
+
+                        </div>
+
+                    </section>
+
+                    <section id="education">
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4">
+                            <h2 class="fw-bold pb-4">Education</h2>
+                        
+                            {% for education_item in edu %}
+                                {% if forloop.counter|divisibleby:2 %}
+                                    <div class="row justify-content-end" data-aos="fade-up">
+                                        <div class="col-7">
+                                            <div class="data-info">
+                                                <p class="meta-date">{{ education_item.start_year }} - {{ education_item.end_year }} 
+                                                    <img src="{% static 'images/Ellipse 7.png' %}" alt="image">
+                                                    <a class="open-description">{{ education_item.university }}</a>
+                                                </p>
+                                                <h3 class="info-title">{{ education_item.title }}</h3>
+                                                <p>{{ education_item.description }}<br>Score: {{ education_item.score }}</p>
+                                                <!-- Assuming score is the field for the score -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <div class="row justify-content-start" data-aos="fade-up">
+                                        <div class="col-7">
+                                            <div class="data-info">
+                                                <p class="meta-date">{{ education_item.start_year }} - {{ education_item.end_year }} 
+                                                    <img src="{% static 'images/Ellipse 7.png' %}" alt="image">
+                                                    <a class="open-description">{{ education_item.university }}</a>
+                                                </p>
+                                                <h3 class="info-title">{{ education_item.title }}</h3>
+                                                <p>{{ education_item.description }}<br>Score: {{ education_item.score }}</p>
+                                                <!-- Assuming score is the field for the score -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        
+
+                    </section>
+
+                    <section id="experiance">
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+                            <h2 class="fw-bold pb-4">Experience</h2>
+
+                            {% for experience_item in exp %}
+                            {% if forloop.counter|divisibleby:2 %}
+                            <div class="row justify-content-end" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">{{experience_item.start_end_year}}&nbsp;<img src="{% static 'images/Ellipse 7.png' %}" alt="image">
+                                            <a class="open-description">{{experience_item.company_name}} </a> </p>
+                                        <h3 class="info-title">{{experience_item.title}}</h3>
+                                        <p>{{experience_item.description}}
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {% else %}
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">{{experience_item.start_end_year}}&nbsp;<img src="{% static 'images/Ellipse 7.png' %}" alt="image"> <a
+                                                class="open-description">{{experience_item.company_name}} </a> </p>
+                                        <h3 class="info-title">{{experience_item.title}}</h3>
+                                        <p>{{experience_item.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                    </section>
+
+                    <section id="skills">
+                        
+                        <div class="py-4 my-4 ">
+                            <h2 class="fw-bold pb-4">Skills</h2>
+
+
+                            <div id="progressbar-tooltip-id" class="progressbar-tooltip">
+                                {% for s in skl %}
+                                <h4>{{s.name}}</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="{{s.percentage}}" data-title=""></div>
+                                {% endfor %}
+                                    
+                            </div>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                    </section>
+
+                    <section id="projects">
+
+
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">Projects</h1>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+
+                        <div class="py-4 my-4 ">
+
+                            <div class="mb-5">
+                                <p>
+                                    <button class="filter-button active" data-filter="*">All</button>
+                                    <button class="filter-button" data-filter=".django">Django</button>
+                                    <button class="filter-button" data-filter=".ml">ML & AI</button>
+                                </p>
+                            </div>
+
+
+                            <div class="isotope-container">
+                                {% for tit, cat, des, link, img in djpro %}
+                                    <div class="item django col-md-4" style="background-color: white;">
+                                        <div class="card p-2" style="width: 18rem; background-color: white;">
+                                            <a href="{{ img }}" title="{{ tit }}" class="image-link">
+                                                <img class="card-img-top" src="{{ img }}" alt="Card image cap" height="160px" width="200px">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.5rem;">{{ tit }}</h5>
+                                                <p class="card-text" style="font-size: 1rem;">{{ des }}</p>
+                                                <a href="{{ link }}" class="btn btn-primary">Click here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+
+                                
+                                {% for tit, cat, des, link, img in mlp %}
+                                    <div class="item ml col-md-4" style="background-color: white;">
+                                        <div class="card p-2" style="width: 18rem; background-color: white;">
+                                            <a href="{{ img }}" title="{{ tit }}" class="image-link">
+                                                <img class="card-img-top" src="{{ img }}" alt="Card image cap" height="160px" width="200px">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.5rem;">{{ tit }}</h5>
+                                                <p class="card-text" style="font-size: 1rem;">{{ des }}</p>
+                                                <a href="{{ link }}" class="btn btn-primary">Click here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                </div>
+                            </div>
+                    </section>
+
+                    <section id="certificates">
+
+                        <hr class="mid-break my-2">
+
+                        <div class=" py-4 my-4 ">
+                            <h2 class="fw-bold pt-4 pb-5">Certificates</h2>
+                            <div class="row row-cols-1 row-cols-sm-2">
+                                {% for certificate in certi %}
+                                <div class="col d-flex align-items-start pb-5">
+                                    <img src="{% static 'images/browser page account.png' %}" alt="image"> <!-- Replace this image src with the certificate image field -->
+                                    <div>
+                                        <h4 class="fw-bold mb-0">{{ certificate.title }}</h4>
+                                        <p class="mb-1">{{ certificate.description }}</p>
+                                        <a href="{{ certificate.link }}" class="icon-link text-black fs-6 mt-0">Click to View</a>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="contact">
+
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">Contact</h1>
+                            <p>Wanna talk, please feel free to contact me.</p>
+                        </div>
+
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+
+                            <div class="row justify-content-around">
+                                <div class="col-md-4 contact-list">
+                                    <p class="contact-paragraph"><iconify-icon icon="ic:outline-phone"></iconify-icon>
+                                        {{pdtl.phone}}</p>
+                                </div>
+                                <div class="col-md-4 contact-list">
+                                    <p class="contact-paragraph"><iconify-icon icon="ic:outline-email"></iconify-icon>
+                                        {{pdtl.email}} </p>
+                                </div>
+                                <div class="col-md-4 contact-list">
+                                    <p class="contact-paragraph"> <iconify-icon
+                                            icon="ic:outline-location-on"></iconify-icon> {{pdtl.address}}</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+
+                            <h2 class="fw-bold pb-4">Get In Touch</h2>
+
+                            <form method="post" class="form-group contact-form mt-4">
+                             {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" minlength="2" name="name" placeholder="Name*"
+                                            class="form-control" required="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" placeholder="E-mail*" class="form-control"
+                                            required="">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <textarea class="form-control mt-4 mb-4" name="message" placeholder="Message"
+                                            style="height: 150px;" required=""></textarea>
+
+
+                                        <input type="submit" name="submit" value="SEND" class="btn btn-primary btn-lg ">
+
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div class="alert alert-{{ message.tags }}">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <hr class="mid-break my-2">
+
+                    </section>
+
+                </div>
+            </div>
+
+            <div class="hero-sidebar col-xl-3 offset-xl-1">
+                <header class="hero position-fixed">
+                    <div class="container hero-container text-center my-4 pt-3 align-content-between">
+
+                        <div>
+                            <img src="{{profile}}" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes"
+                                width="140" height="140" loading="lazy">
+
+
+                            <h2 class="fw-bold mt-3">{{pdtl.name}}</h2>
+                            <p>{% for ab in about %}{{ab.about}}{% endfor %}</p>
+                            <div class="social-icon my-3">
+                                <p>
+                                    <a class="social-link mx-3 active" href="www.linkedin.com/in/ihsan-k-a0ba12220"> <iconify-icon
+                                            icon="icomoon-free:linkedin"></iconify-icon> </a>
+                                    <a class="social-link mx-3 " href="#"> <iconify-icon
+                                            icon="icomoon-free:github"></iconify-icon> </a>
+                                    <a class="social-link mx-3 " href="#"> <iconify-icon
+                                            icon="icomoon-free:twitter"></iconify-icon> </a>
+                                    <a class="social-link mx-3 " href="#"> <iconify-icon
+                                            icon="icomoon-free:youtube"></iconify-icon> </a>
+                                </p>
+
+                            </div>
+
+                            <h4 class=" text-uppercase text-light fs-5 fw-bold py-2 mx-5 mt-5">Pro Pages</h4>
+
+                            <ul class="text-center list-unstyled">
+                                <li><a href="blog-single.html" class="text-uppercase ">Blog-Single
+                                        <span class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="services-single.html" class="text-uppercase ">Service-Single
+                                        <span class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="portfolio-single.html" class="text-uppercase ">Portfolio-Single
+                                        <span class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="contact.html" class="text-uppercase ">Contact <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="team.html" class="text-uppercase ">My Team <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="review.html" class="text-uppercase ">Reviews <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="faq.html" class="text-uppercase ">FAQs <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                            </ul>
+
+                            <div>
+                                <a href="https://templatesjungle.gumroad.com/l/carl-free-bootstrap-5-html-website-template-for-portfolio"
+                                    class="btn btn-primary get-pro text-uppercase rounded-5 py-3 px-4 mt-3">Get
+                                    Pro <iconify-icon icon="mdi:cart" class="ps-2" style="color: white;"></iconify-icon>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-5">
+                            <p class="copyright ">© Free HTML template by: <a href="https://templatesjungle.com/">
+                                    <u>TemplatesJungle </u> </a> </p>
+                        </div>
+
+
+                    </div>
+                </header>
+            </div>
+
+        </div>
+    </div>
+    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>
